@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+      <link rel="stylesheet" href="static/style.css" />
+        <title>String Input</title>
+    </head>
+    <body>
+        <h1>Enter Your Name</h1>
+        <form action="{{ url_for('result') }}" method="post">
+            <input type="text" name="input_string">
+            <input type="submit" value="Submit">
+        </form>
+    </body>  
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+      <link rel="stylesheet" href="static/style.css" />
+        <title>String Result</title>
+    </head>
+    <body>
+        <h1>Rooms to check:</h1>
+        <script>
+          var string = processed_string;
+          var items = string.split(" ");
+          var list = document.getElementById("list");
+          for (var i = 0; i < items.length; i++) {
+            var item = document.createElement("p");
+            item.innerText = items[i];
+            list.appendChild(item);
+          }
+        </script>
+        <li>{{ processed_string }}</li>
+    </body>
+</html>
